@@ -106,6 +106,8 @@ def spatial(spatial_extent):
             if spatial_extent[0] > spatial_extent[2]:
                 # if lower left lon is larger then upper right lon, verify the values are crossing the dateline
                 assert(spatial_extent[0]-360 <= spatial_extent[2])
+                print ("WARNING: The requested BBOX crosses the dateline.  If you did not intend this, please\
+                         check ordering of the coordinates")
             else:
                 # otherwise assert that LL is indeed less than upper right
                 assert (
