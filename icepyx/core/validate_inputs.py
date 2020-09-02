@@ -103,11 +103,11 @@ def spatial(spatial_extent):
                 -180 <= spatial_extent[0] <= 180
             ), "Invalid longitude value"  # tighten these ranges depending on actual allowed inputs
             assert -180 <= spatial_extent[2] <= 180, "Invalid longitude value"
-            if np.sign(spatial_extent[0]) != np.sign(spatial_extent[2]):
-                assert (
-                    spatial_extent[0] >= spatial_extent[2]
-                ), "Invalid bounding box longitudes"
+            if spatial_extent[0] > spatial_extent[2]:
+                # if lower left lon is larger then upper right lon, verify the values are crossing the dateline
+                assert(spatial_extent[0]-360 <= spatial_extent[2])
             else:
+                # otherwise assert that LL is indeed less than upper right
                 assert (
                     spatial_extent[0] <= spatial_extent[2]
                 ), "Invalid bounding box longitudes"
