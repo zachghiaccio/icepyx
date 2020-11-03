@@ -12,6 +12,7 @@ order by last name) and are considered "The icepyx Developers":
 * `Alessandro Di Bella <https://github.com/alexdibella>`_ - Technical University of Denmark
 * `Raphael Hagen <https://github.com/norlandrhagen>`_ - University of Washington
 * `Scott Henderson <https://github.com/scottyhq>`_ - University of Washington
+* `Benjamin Hills <https://github.com/benhills>`_ - University of Washington
 * `Thomas Johnson <https://github.com/loudTom>`_ - University College London
 * `Zheng Liu <https://github.com/liuzheng-arctic>`_ - University of Washington
 * `Ted Maksym <https://github.com/tedmaksym>`_ - Woods Hole Oceanographic Institution
