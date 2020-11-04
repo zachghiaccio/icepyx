@@ -10,6 +10,7 @@ order by last name) and are considered "The icepyx Developers":
 * `Kelsey Bisson <https://github.com/kelseybisson>`_ - Oregon State University
 * `Shashank Bhushan <https://github.com/ShashankBice>`_ - University of Washington
 * `Alessandro Di Bella <https://github.com/alexdibella>`_ - Technical University of Denmark
+* `Roddrigo Gomez-Fell <https://github.com/RGFell>`_ - University of Canterbury, New Zealand 
 * `Raphael Hagen <https://github.com/norlandrhagen>`_ - University of Washington
 * `Scott Henderson <https://github.com/scottyhq>`_ - University of Washington
 * `Benjamin Hills <https://github.com/benhills>`_ - University of Washington
