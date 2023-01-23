@@ -61,10 +61,17 @@ def gran_IDs(grans, ids=True, cycles=False, tracks=False, dates=False, cloud=Fal
     """
     assert len(grans) > 0, "Your data object has no granules associated with it"
     # regular expression for extracting parameters from file names
-    rx = re.compile(
-        r"(ATL\d{2})(-\d{2})?_(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})"
-        r"(\d{2})_(\d{4})(\d{2})(\d{2})_(\d{3})_(\d{2})(.*?).(.*?)$"
-    )
+    if 'QL' in grans[0]['producer_granule_id']:
+        rx = re.compile(
+            r"(ATL\d{2}QL)(-\d{2})?_(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})"
+            r"(\d{2})_(\d{4})(\d{2})(\d{2})_(\d{3})_(\d{2})(.*?).(.*?)$"
+        )
+    else:
+        rx = re.compile(
+            r"(ATL\d{2})(-\d{2})?_(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})"
+            r"(\d{2})_(\d{4})(\d{2})(\d{2})_(\d{3})_(\d{2})(.*?).(.*?)$"
+        )
+
     gran_ids = []
     gran_cycles = []
     gran_tracks = []
