@@ -26,6 +26,7 @@ def _validate_product(product):
             "ATL07",
             "ATL07QL",
             "ATL08",
+            "ATL08QL",
             "ATL09",
             "ATL09QL",
             "ATL10",
